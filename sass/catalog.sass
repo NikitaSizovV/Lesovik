@@ -1,0 +1,599 @@
+.main_section
+  padding: 100px 50px
+  @media screen and (max-width: 600px)
+    padding: 60px 20px
+  .name
+    font-size: 56px
+    font-weight: 700
+    text-align: left
+    @media screen and (max-width: 600px)
+      font-size: 24px
+  .buttons
+    margin-top: 60px
+    display: flex
+    width: 450px
+    justify-content: space-between
+    @media screen and (max-width: 600px)
+      display: none
+    .button
+      background: white
+      font-size: 14px
+      font-weight: 500
+      height: 50px
+      box-sizing: border-box
+      padding: 15px 20px
+      color: #594237
+      border-radius: 6px
+    .active-btn
+      background-color: #ca8659
+      color: white
+  .filters
+    overflow-x: auto
+    margin-top: 20px
+    -ms-overflow-style: none
+    scrollbar-width: none
+    &::-webkit-scrollbar
+      width: 0px
+    .filters_overflow
+      width: 500px
+      display: flex
+      width: 490px
+      justify-content: space-between
+      .filter
+        background: white
+        font-size: 14px
+        font-weight: 500
+        height: 40px
+        box-sizing: border-box
+        padding: 10px 20px
+        color: #594237
+        border-radius: 25px
+        cursor: pointer
+      .active
+        background-color: #ca8659
+        color: white
+
+$item-width: 280px
+
+
+.grid
+  margin-top: 30px
+  display: grid
+  padding: 1px
+  grid-gap: 2vw
+  width: 100%
+
+.grid-fit
+  grid-template-columns: repeat(auto-fit, $item-width)
+
+.grid-fill
+  grid-template-columns: repeat(auto-fill, $item-width)
+
+.grid-evenly
+  justify-content: space-around
+
+.item
+  width: $item-width
+  height: 220px
+  box-sizing: border-box
+  background: #F8F7EF
+
+.last
+  margin-top: 300px
+
+.big_log
+  margin-top: -240px
+.fade
+  height: 100%
+  width: 100%
+  background-color: #eeebea
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+  z-index: 50
+.show_flex
+  display: flex!important
+  z-index: 50
+.popup
+  height: 580px
+  width: auto
+  display: flex
+  position: relative
+  flex-direction: row
+  margin: auto
+  overflow-y: auto
+  max-width: 1180px
+  @media screen and (max-width: 1100px)
+    flex-direction: column
+    max-width: 600px
+    height: 90%
+  .close
+    height: 40px
+    width: 40px
+    background-color: #ffffff
+    border-radius: 25px
+    position: absolute
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+    top: 20px
+    display: flex
+    right: 20px
+    z-index: 10000
+    svg
+      margin: auto
+  .image
+    height: 100%
+    width: 57%
+    @media screen and (max-width: 1100px)
+      width: 100%
+      min-height: 500px
+    @media screen and (max-width: 600px)
+      min-height: 350px
+    @media screen and (max-width: 520px)
+      min-height: 370px
+    @media screen and (max-width: 460px)
+      min-height: 320px
+    @media screen and (max-width: 380px)
+      min-height: 260px
+    img
+      height: 100%
+      width: 100%
+  .info
+    width: 43%
+    height: 100%
+    box-sizing: border-box
+    padding: 40px
+    background: white
+    @media screen and (max-width: 1100px)
+      width: 100%
+      height: 220%
+    .name_price
+      border-bottom: 1px solid #eeebea
+      padding-bottom: 20px
+      .name
+        font-size: 24px
+        font-weight: 700
+        text-align: left
+      .price
+        font-size: 18px
+        font-weight: 400
+        color: #594237
+    .description
+      .article
+        padding: 0
+        font-size: 16px
+        font-weight: 600
+      &__text
+        color: #594237
+        font-size: 14px
+        line-height: 21px
+    .add_favourite
+      display: flex
+      justify-content: space-between
+      .add_button
+        width: 360px
+        height: 50px
+        display: flex
+        background-color: #ca8659
+        border-radius: 30px
+        box-shadow: 0 6px 12px rgba(202, 134, 89, 0.24)
+        margin-top: 30px
+        @media screen and (max-width: 400px)
+          width: 250px
+        p
+          color: white
+          margin: auto
+.fade_cart
+  height: 100%
+  width: 100%
+  background-color: #eeebea
+  position: fixed
+  display: none
+  top: 0
+  left: 0
+  z-index: 50
+  .popup
+    height: 580px
+    width: auto
+    display: flex
+    position: relative
+    flex-direction: row
+    margin: auto
+    overflow-y: auto
+    max-width: 1180px
+    @media screen and (max-width: 1100px)
+      flex-direction: column
+      max-width: 600px
+      height: 90%
+    .close
+      height: 40px
+      width: 40px
+      background-color: #ffffff
+      border-radius: 25px
+      position: absolute
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+      top: 20px
+      display: flex
+      right: 20px
+      z-index: 10000
+      svg
+        margin: auto
+    .cart
+      background: white
+      padding: 40px
+      width: 100%
+      @media screen and (max-width: 1100px)
+        width: auto
+      .upper_text
+        border-bottom: 1px solid #eeebea
+        padding-bottom: 30px
+        .how_much
+          font-size: 24px
+        .managers
+          color: #594237
+          font-size: 14px
+          font-weight: 400
+          line-height: 21px
+      .products
+        .product
+          display: flex
+          margin-top: 20px
+          width: 100%
+          justify-content: space-between
+          align-items: center
+          @media screen and (max-width: 500px)
+            flex-direction: column
+            align-items: flex-start
+          .delete_desc
+            align-items: center
+            display: flex
+            .delete
+              height: 50px
+              width: 50px
+              background-color: #fbf8f5
+              border-radius: 25px
+              display: flex
+              @media screen and (max-width: 550px)
+                display: none
+              svg
+                margin: auto
+            .desc
+              display: flex
+              align-items: center
+              .photo
+                height: 80px
+                width: 80px
+                margin-left: 20px
+                @media screen and (max-width: 500px)
+                  margin-left: 0px
+                img
+                  height: 100%
+                  width: 100%
+                  border-radius: 15px
+              .name_price
+                margin-left: 20px
+                .name
+                  font-size: 18px
+                  font-weight: 600
+                  line-height: 24px
+                  @media screen and (max-width: 500px)
+                    font-size: 14px
+                .price
+                  font-size: 16px
+                  font-weight: 400
+                  line-height: 24px
+                  color: #594237
+                  @media screen and (max-width: 500px)
+                    font-size: 12px
+        .counter
+          width: 100px
+          height: 50px
+          background-color: #fbf8f5
+          border-radius: 25px
+          display: flex
+          justify-content: space-around
+          align-items: center
+          @media screen and (max-width: 500px)
+            margin-top: 10px
+          .plus
+            width: 20px
+            height: 20px
+            background-color: #ca8659
+            border-radius: 50px
+            color: white
+            font-size: 17px
+            text-align: center
+            font-weight: 800
+          .count
+            font-size: 16px
+            font-weight: 400
+  .details
+    width: 420px
+    background-color: #f6f1ed
+    display: flex
+    align-items: center
+    flex-direction: column
+    padding: 40px
+    text-align: center
+    @media screen and (max-width: 1100px)
+      width: auto
+    .add_favourite
+      display: flex
+      justify-content: space-between
+      .add_button
+        width: 360px
+        height: 50px
+        display: flex
+        background-color: #ca8659
+        border-radius: 30px
+        box-shadow: 0 6px 12px rgba(202, 134, 89, 0.24)
+        margin-top: 30px
+        @media screen and (max-width: 400px)
+          width: 250px
+          padding-left: 90px
+        p
+          color: white
+          margin: auto
+    .name
+      font-size: 24px
+    .text_cart
+      font-weight: 400
+      font-size: 14px
+      line-height: 21px
+      color: #594237
+    .details_form
+      text-align: left
+      @media screen and (max-width: 1100px)
+        align-items: center
+        display: flex
+        flex-direction: column
+      .input_details
+        width: 300px
+        height: 50px
+        border-radius: 6px
+        border: 0
+        margin-top: 10px
+        padding: 16px 20px
+        box-sizing: border-box
+      .red
+        color: red
+      span
+        font-size: 12px
+        font-weight: 400
+        color: #594237
+      input[type="checkbox"]:checked,
+      input[type="checkbox"]:not(:checked)
+        position: absolute
+        left: -9999px
+      input[type="checkbox"]:checked + label:before,
+      input[type="checkbox"]:not(:checked) + label:before
+        content: ""
+        position: absolute
+        left: 0px
+        top: 0px
+        border-radius: 2px
+        width: 18px
+        height: 18px
+        border: 2px solid rgb(139,116,105)
+      input[type="checkbox"]:checked + label:after,
+      input[type="checkbox"]:not(:checked) + label:after
+        content: "✓"
+        color: white
+        padding-left: 2px
+        box-sizing: border-box
+        font-size: 22px
+        position: absolute
+        left: 0px
+        top: 0px
+        width: 22px
+        height: 22px
+        border-radius: 2px
+        transition: .3s
+        background-color: #e20338
+      input[type="checkbox"]:not(:checked) + label:after
+        opacity: 0
+      input[type="checkbox"]:checked + label:after
+        opacity: 1
+      input[type="checkbox"]:checked
+        background-color: #e20338
+      input[type="checkbox"]:checked + label,
+      input[type="checkbox"]:not(:checked) + label
+        display: inline-block
+        position: relative
+        padding-left: 28px
+        line-height: 20px
+        cursor: pointer
+.show_flex
+  display: flex!important
+  z-index: 50
+button
+  border: 0
+  color: white
+  font-size: 14px
+  padding-left: 142px
+//POPUP SUCCESS ORDER
+.fade_success
+  height: 100%
+  width: 100%
+  background-color: #eeebea
+  position: fixed
+  display: none
+  top: 0
+  left: 0
+  z-index: 50
+  .popup
+    flex-direction: column
+    height: auto
+    width: 580px
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16)
+    text-align: center
+    padding: 50px
+    box-sizing: border-box
+    @media screen and (max-width: 620px)
+      width: 400px
+    @media screen and (max-width: 420px)
+      width: 300px
+    .name
+      font-weight: 700
+      line-height: 24px
+      font-size: 24px
+      color: black
+    p
+      font-size: 18px
+      color: #594237
+.fade_personal_order
+  height: 100%
+  width: 100%
+  background-color: #eeebea
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 50
+  .popup
+    .details
+      width: 380px
+      background-color: #f6f1ed
+      display: flex
+      align-items: center
+      flex-direction: column
+      padding: 40px
+      text-align: center
+      @media screen and (max-width: 1100px)
+        width: auto
+      .add_favourite
+        display: flex
+        justify-content: space-between
+        .add_button
+          width: 360px
+          height: 50px
+          display: flex
+          background-color: #ca8659
+          border-radius: 30px
+          box-shadow: 0 6px 12px rgba(202, 134, 89, 0.24)
+          margin-top: 30px
+          @media screen and (max-width: 400px)
+            width: 250px
+            padding-left: 90px
+          p
+            color: white
+            margin: auto
+      .name
+        font-size: 24px
+      .text_cart
+        font-weight: 400
+        font-size: 14px
+        line-height: 21px
+        color: #594237
+      .details_form
+        text-align: left
+        @media screen and (max-width: 1100px)
+          align-items: center
+          display: flex
+          flex-direction: column
+        .input_details
+          width: 300px
+          height: 50px
+          border-radius: 6px
+          border: 0
+          margin-top: 10px
+          padding: 16px 20px
+          box-sizing: border-box
+        .red
+          color: red
+        span
+          font-size: 12px
+          font-weight: 400
+          color: #594237
+        input[type="checkbox"]:checked,
+        input[type="checkbox"]:not(:checked)
+          position: absolute
+          left: -9999px
+        input[type="checkbox"]:checked + label:before,
+        input[type="checkbox"]:not(:checked) + label:before
+          content: ""
+          position: absolute
+          left: 0px
+          top: 0px
+          border-radius: 2px
+          width: 18px
+          height: 18px
+          border: 2px solid rgb(139,116,105)
+        input[type="checkbox"]:checked + label:after,
+        input[type="checkbox"]:not(:checked) + label:after
+          content: "✓"
+          color: white
+          padding-left: 2px
+          box-sizing: border-box
+          font-size: 22px
+          position: absolute
+          left: 0px
+          top: 0px
+          width: 22px
+          height: 22px
+          border-radius: 2px
+          transition: .3s
+          background-color: #e20338
+        input[type="checkbox"]:not(:checked) + label:after
+          opacity: 0
+        input[type="checkbox"]:checked + label:after
+          opacity: 1
+        input[type="checkbox"]:checked
+          background-color: #e20338
+        input[type="checkbox"]:checked + label,
+        input[type="checkbox"]:not(:checked) + label
+          display: inline-block
+          position: relative
+          padding-left: 28px
+          line-height: 20px
+          cursor: pointer
+.personal_order
+  text-align: center
+  width: 100%
+  padding: 40px
+  position: relative
+  background: white
+  display: none
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16)
+  @media screen and (max-width:1100px)
+    width: auto
+  textarea
+    height: 250px
+    width: 100%
+    background-color: #fbf8f5
+    font-size: 14px
+    color: #594237
+    font-weight: 400
+    padding: 20px
+    box-sizing: border-box
+    border: 0
+    outline: none
+  .add_photo
+    background-color: #f6f1ed
+    border: 1px dashed #ca8659
+    border-radius: 6px
+    height: 50px
+    width: 50
+    position: absolute
+    width: 80%
+    margin-left: 3%
+    color: #594237
+    padding-top: 15px
+    box-sizing: border-box
+    margin-top: -70px
+    @media screen and (max-width: 540px)
+      width: 50%
+      margin-left: 13%
+  .main_text
+    font-size: 36px
+    font-weight: 400
+    line-height: 56px
+    @media screen and (max-width: 560px)
+      font-size: 20px
+      line-height: 26px
+  .secondary_text
+    font-size: 20px
+    font-weight: 400
+    line-height: 30px
+    color: #594237
+    @media screen and (max-width: 560px)
+      font-size: 14px

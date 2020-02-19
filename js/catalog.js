@@ -1,0 +1,56 @@
+//=require ../blocks/**/*.js
+$(document).ready(function () {
+$("#bench").click(function(){
+  $(".active").removeClass('active')
+  $(".bench-filter").addClass('active')
+  $(".bench").slideDown();
+  $(".stairs").slideUp();
+  $(".street").slideUp();
+  $(".talks").slideUp();
+});
+$("#stairs").click(function(){
+  $(".active").removeClass('active')
+  $(".stairs-filter").addClass('active')
+  $(".stairs").slideDown();
+  $(".bench").slideUp();
+  $(".street").slideUp();
+  $(".talks").slideUp();
+});
+$("#street").click(function(){
+  $(".active").removeClass('active')
+  $(".street-filter").addClass('active')
+  $(".street").slideDown();
+  $(".stairs").slideUp();
+  $(".bench").slideUp();
+  $(".talks").slideUp();
+});
+$("#talks").click(function(){
+  $(".active").removeClass('active')
+  $(".talks-filter").addClass('active')
+  $(".talks").slideDown();
+  $(".stairs").slideUp();
+  $(".street").slideUp();
+  $(".bench").slideUp();
+});
+$("#all").click(function(){
+  $(".active").removeClass('active')
+  $(".all-filter").addClass('active')
+  $(".talks").slideDown();
+  $(".stairs").slideDown();
+  $(".street").slideDown();
+  $(".bench").slideDown();
+});
+$("#popup").click(function(){
+  $(".fade").addClass('show_flex');
+});
+$("#cart").click(function(){
+  $(".fade_cart").addClass('show_flex');
+});
+$("#close").click(function(){
+  $(".fade").removeClass('show_flex');
+});
+
+$("#close_cart").click(function(){
+$(".fade_cart").removeClass('show_flex');
+});
+});

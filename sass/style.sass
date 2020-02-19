@@ -1,0 +1,1014 @@
+$main_brown: #CA8659
+$text_color: #594237
+$grey_line: #00000029
+
+sup
+  font-size: 9px
+  vertical-align: top
+  position: relative
+  top: 0.5em
+*
+  margin: 0
+  padding: 0
+  transition: 0s
+  font-family: main
+@font-face
+  font-family: logo
+  src: url(../fonts/AgencyGothicCT-Bold.otf)
+@font-face
+  font-family: main
+  src: url(../fonts/UbuntuRegular.ttf)
+@font-face
+  font-family: ibm
+  src: url(../fonts/IBMPlexSans-Regular.ttf)
+@font-face
+  font-family: expo
+  src: url(../fonts/td-neumann.otf)
+@font-face
+  font-family: pavlov
+  src: url(../fonts/logo.otf)
+
+.h1
+  font-size: 46px!important
+  @media screen and (max-width:768px)
+    font-size: 36px!important
+  @media screen and (max-width:425px)
+    font-size: 20px!important
+
+.h2
+  font-size: 24px
+
+html
+  max-width: 100%
+  overflow-x: hidden!important
+  background: #FBF8F5
+
+body
+  height: auto
+  width: auto
+  max-width: 100%
+  overflow: hidden
+.show_br
+  @media screen and (max-width:678px)
+    display: none
+.no_br
+  display: none
+  @media screen and (max-width:678px)
+    display: inline
+.hide_br
+  @media screen and (max-width:460px)
+    display: none
+
+.btn_circle
+  height: 40px
+  width: 200px
+  background: $main_brown
+  border-radius: 30px
+  color: white
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-top: 0
+  margin: auto
+
+.hide
+    @media screen and (max-width:768px)
+      display: none
+.delete
+  display: none
+.noShadow
+  box-shadow: 0px 0px 0px #00000029
+
+.marg
+  display: none
+  @media screen and (max-width:768px)
+    margin-top: 5px
+    display: block
+
+.marg2
+  display: none
+  @media screen and (max-width:768px)
+    margin-top: 20px
+    font-size: 16px
+    display: block
+
+header
+  height: 70px
+  width: auto
+  display: flex
+  font-family: main
+  box-shadow: 0px 3px 6px #00000029
+  .menu_responsive
+    display: none
+    @media screen and (max-width:1024px)
+      padding: 16px 30px
+      display: flex
+      height: 100%
+      width: auto
+    .list
+      height: auto
+      width: auto
+      padding: 12px 10px
+      text-align: center
+      color: $text_color
+    .three-stick
+      height: 40px
+      width: 40px
+      background: #FBF8F5
+      border-radius: 100px
+      svg
+        display: block
+        margin: auto
+        margin-top: 8px
+
+.logo
+  font-family: logo
+  width: auto
+  height: 26px
+  font-size: 32px
+  color: $text_color
+  padding: 22px 0px 22px 30px
+
+.menu
+  width: auto
+  height: auto
+  display: flex
+  padding: 27px 0px 27px 15px
+  @media screen and (max-width:1024px)
+    display: none
+  .list
+    height: auto
+    width: auto
+    padding: 0 10px
+    text-align: center
+    color: $text_color
+    font-size: 14px
+.bor
+  border-left: 1px solid $grey_line
+  border-right: 1px solid $grey_line
+  @media screen and (max-width:768px)
+    border: 0
+
+.right-menu
+  width: auto
+  height: auto
+  display: flex
+  flex-direction: row-reverse
+  margin: 0 0 0 auto
+  .menu_responsive
+    display: none
+    @media screen and (max-width:768px)
+        padding: 16px 30px
+        display: flex
+        height: 100%
+        width: auto
+  .list
+    height: auto
+    width: auto
+    text-align: center
+    color: $text_color
+    font-size: 14px
+    padding: 10px 10px
+    white-space: nowrap
+    display: flex
+    align-items: center
+    justify-content: center
+    @media screen and (max-width:768px)
+        display: none
+  .favourite
+    height: auto
+    width: auto
+    padding: 22px 16px
+    background-image: url('../img/')
+    @media screen and (max-width:768px)
+        padding: 22px 0px
+  .btn
+    height: 100%
+    width: 170px
+    background: $main_brown
+    color: white
+    font-size: 14px
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    box-shadow: 0px 6px 12px #CA86593D
+    @media screen and (max-width:768px)
+        display: none
+.b-toggle
+    opacity: 0
+    max-height: 0
+    overflow: hidden
+    -moz-transition: opacity .3s, max-height 0s
+    -ms-transition: opacity .3s, max-height 0s
+    transition: opacity .3s, max-height 0s
+
+.expanded
+    width: 100%
+    height: auto
+    max-height: 1900px
+    opacity: 1
+    display: flex
+    justify-content: space-around
+    box-shadow: 0px 3px 6px #00000029
+    @media screen and (max-width:768px)
+      flex-direction: column
+      z-index: 100
+      height: 100vh
+      width: 100%
+      justify-content: flex-start
+    .list
+      height: auto
+      width: 100%
+      text-align: center
+      color: $text_color
+      font-size: 14px
+      padding: 10px 15px
+      // white-space: nowrap
+      @media screen and (max-width:768px)
+        padding-left: 0
+
+.photo
+  height: 630px
+  @media screen and (max-width:678px)
+    height: 490px
+  width: 100%
+  background-image: url('../img/1@2x.png')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+.darker
+  height: 100%
+  width: 100%
+  position: relative
+  background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.5))
+  @media screen and (max-width:678px)
+    background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.5))
+
+.text
+  color: white
+  padding: 130px 0px 130px 100px
+  @media screen and (max-width:768px)
+    padding: 130px 0px 40px 34px
+  @media screen and (max-width:678px)
+    padding: 90px 30px
+    text-align: center
+  .big_text
+    font-size: 56px
+    @media screen and (max-width:1024px)
+      font-size: 46px
+    @media screen and (max-width:678px)
+      font-size: 24px
+  p
+    font-size: 20px
+    font-family: ibm
+    @media screen and (max-width:678px)
+      font-size: 14px
+
+
+.screen
+  padding: 0px 93px
+  @media screen and (max-width:768px)
+    padding: 0px 34px
+  @media screen and (max-width:420px)
+    padding: 0px 20px
+.row
+  display: flex
+  justify-content: space-between
+  @media screen and (max-width:678px)
+    justify-content: center!important
+
+.firstCircle
+  height: 60px
+  width: 60px
+  background-image: url('../img/arrow_down.png')
+  margin-top: -25px
+  z-index: 10
+  @media screen and (max-width:678px)
+    display: none
+
+.circles
+  height: auto
+  width: auto
+  margin-top: -140px
+  display: flex
+  z-index: 2
+  flex-direction: column
+  position: relative
+  @media screen and (max-width:1024px)
+    margin-top: -180px
+  .bigCircle
+    height: 280px
+    width: 280px
+    background: white
+    border-radius: 280px
+    display: inherit
+    box-shadow: 0px 25px 50px #CA86593D
+    @media screen and (max-width:678px)
+      height: 220px
+      width: 220px
+    .middleCircle
+      margin: auto
+      height: 260px
+      width: 260px
+      background: white
+      border-radius: 280px
+      display: inherit
+      border-image: url('../img/border.png') 0 fill
+      @media screen and (max-width:678px)
+        height: 200px
+        width: 200px
+      p
+        padding-left: 20px
+        width: auto
+        height: auto
+        margin: auto
+        text-align: center
+        font-size: 24px
+        font-family: expo
+        color: $main_brown
+        text-transform: uppercase
+        @media screen and (max-width:678px)
+          font-size: 18px
+  .littleCircle
+    height: 25px
+    width: 25px
+    margin-top: -75px
+  .log
+    height: 600px
+    width: 1200px
+    position: absolute
+    background-image: url('../img/log2.png')
+    background-size: cover
+    margin-left: -450px
+    margin-top: 140px
+    z-index: -1
+    @media screen and (max-width:1024px)
+      margin-top: 180px
+      z-index: -10
+
+
+.article
+  display: flex
+  height: auto
+  width: auto
+  padding-top: 74px
+  @media screen and (max-width:768px)
+    flex-direction: column
+  .articleHeader
+    margin-left: 54px
+    color: black
+    z-index: 2
+    @media screen and (max-width:768px)
+      margin: 0
+    .afterHeader
+      font-size: 20px
+      color: $text_color
+      font-weight: 300
+      @media screen and (max-width:425px)
+        font-size: 14px
+.vertical_text
+  padding-left: 23px
+  font-size: 14px
+  color: $main_brown
+  display: flex
+  margin-top: 70px
+  z-index: 2
+  height: 100px
+  @media screen and (max-width:768px)
+    flex-direction: row
+    font-size: 11px
+    margin-top: -1px
+    position: absolute
+  @media screen and (max-width:425px)
+    padding: 0
+  p
+    display: inline-block
+    writing-mode: vertical-rl
+    transform: rotate(180deg)
+    position: relative
+    margin: auto
+    letter-spacing: 1.1px
+    font-weight: bold
+    @media screen and (max-width:768px)
+      transform: rotate(0deg)
+      writing-mode: lr-tb
+      margin: 0
+  .hr
+    margin-left: -25px
+    margin-top: -38px
+    height: 2px
+    width: 32px
+    background: $main_brown
+    transform: rotate(90deg)
+  .noHr
+    display: none
+    margin-top: 6px
+    height: 2px
+    width: 32px
+    background: $main_brown
+    transform: rotate(90deg)
+    @media screen and (max-width:768px)
+      display: block
+      transform: rotate(0deg)
+    @media screen and (max-width:425px)
+      display: none
+.hideThis
+  @media screen and (max-width:425px)
+    display: none
+
+.slider
+  z-index: 100
+  margin-top: 80px
+  position: relative
+  @media screen and (max-width:768px)
+    height: 360px
+  .buttons
+    margin-top: 30px
+    margin-left: -10px
+    display: flex
+    @media screen and (max-width:660px)
+      display: none
+    .btn
+      height: 18px
+      margin-left: 10px
+      border-radius: 25px
+      padding: 11px 20px
+      background: #FFFFFF
+      color: $text_color
+      cursor: pointer
+      &:active
+        background: $main_brown
+        color: white
+    .active
+      background: $main_brown
+      color: white
+  .images
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+    margin-left: -10px
+    .img
+      position: relative
+      margin-left: 10px
+      img
+        height: 100%
+        width: 100%
+        @media screen and (max-width:1024px)
+          height: 170px
+          width: 220px
+          margin-left: 10px
+        @media screen and (max-width:520px)
+          height: 100px
+          width: 135px
+        &:hover ~ .img_hover
+          display: flex
+          z-index: 100
+    .img_hover
+      position: absolute
+      height: 100%
+      width: 100%
+      background: rgba(0,0,0,0.5)
+      top: 0
+      left: 0
+      display: none
+      color: white
+      text-align: center
+      flex-direction: column
+      align-items: center
+      .name
+        padding-top: 40px
+        font-size: 18px
+        font-weight: bold
+      .price
+        font-size: 16px
+      .button
+        margin-top: 40px
+        height: 38px
+        width: 50px
+        border-radius: 100px
+        padding-top: 12px
+        background-repeat: no-repeat
+        background-size: 100%
+        background: white
+.catalog
+  display: flex
+  justify-content: center
+  .btn
+    height: 33px
+    padding: 17px 18px 0px 18px
+    background: $main_brown
+    color: white
+    border-radius: 30px
+    text-align: center
+    margin-top: 50px
+    box-shadow: 0px 6px 12px #CA86593D
+.pavlov
+  margin-left: auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  @media screen and (max-width:768px)
+    margin: 0
+    flex-direction: row
+    justify-content: space-between
+  @media screen and (max-width:650px)
+    margin: 0
+    flex-direction: column
+  .pavlov_photo
+    height: 220px
+    width: 220px
+    border-image: url('../img/border.png') 0 fill
+    display: flex
+    justify-content: center
+    .the_pavlov
+      height: 200px
+      width: 200px
+      border-radius: 200px
+      margin-top: 10px
+      background-image: url('../img/pavlov.png')
+  .quote_img
+    height: 54px
+    width: 72px
+    margin: auto
+    @media screen and (max-width:768px)
+      margin: 0
+      margin-left: 25px
+    @media screen and (max-width:520px)
+      margin: auto
+  .quote
+    margin-top: -30px
+    text-align: center
+    font-size: 18px
+    @media screen and (max-width:768px)
+      text-align: left
+    @media screen and (max-width:520px)
+      text-align: center
+
+.name
+  font-size: 16px
+  font-weight: bold
+  font-family: ibm
+  text-align: center
+.position
+  font-size: 14px
+  color: $text_color
+  text-align: center
+.sign
+  height: 50px
+  width: 180px
+  background-image: url('../img/signature.png')
+  background-repeat: no-repeat
+  background-size: cover
+  margin: auto
+.list
+  ul
+    li
+      color: $main_brown
+      font-size: 24px
+      font-family: expo
+      list-style-type: none
+      white-space: nowrap
+      &:before
+        content: '— '
+      @media screen and (max-width:470px)
+        font-size: 16px
+.back
+  height: 420px
+  width: 640px
+  background: $main_brown
+  position: relative
+  @media screen and (max-width:690px)
+    height: 340px
+    width: 510px
+  @media screen and (max-width:575px)
+    height: 300px
+    width: 445px
+  @media screen and (max-width:485px)
+    height: 180px
+    width: 280px
+    background: rgba(0,0,0,0)
+  .slider
+    position: absolute
+    height: 100%
+    width: 100%
+    background-image: url('../img/photo1.png')
+    background-size: cover
+    margin-top: 10px
+    margin-left: -10px
+    @media screen and (max-width:485px)
+      margin: 0
+.ukraine_img
+  height: 320px
+  width: 480px
+  background-image: url('../img/ukraine.png')
+  background-size: cover
+  @media screen and (max-width:540px)
+    height: 240px
+    width: 360px
+  @media screen and (max-width:410px)
+    height: 186px
+    width: 280px
+.ukraine_text
+  font-size: 40px
+  font-family: expo
+  color: $main_brown
+  text-align: center
+  @media screen and (max-width:540px)
+    font-size: 32px
+  @media screen and (max-width:410px)
+    font-size: 24px
+.layers
+  height: 50px
+  width: 390px
+  background-image: url('../img/layers.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  margin: auto
+  @media screen and (max-width:540px)
+    width: 300px
+  @media screen and (max-width:410px)
+    width: 280px
+.marg
+  margin-top: 100px
+.second_ukraine
+  @media screen and (max-width:1024px)
+    display: flex
+.column
+  @media screen and (max-width:1024px)
+    display: none
+.column_show
+  display: none
+  @media screen and (max-width:1024px)
+    display: flex
+    margin-top: -80px
+.reverse
+  @media screen and (max-width:1024px)
+    flex-direction: row-reverse
+  @media screen and (max-width:768px)
+    flex-direction: column
+
+.second
+  display: flex
+  justify-content: center
+  margin-top: 165px
+
+.about_all
+  display: flex
+  @media screen and (max-width:520px)
+    flex-direction: column
+.ukraine
+  margin: auto
+
+.three_acts
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+
+.number
+  height: 100%
+  width: 100%
+  text-align: center
+  display: flex
+  p
+    font-size: 36px
+    margin: auto
+    font-family: expo
+    color: white
+
+.name_act
+  color: white
+  background-repeat: no-repeat
+  background-size: cover
+  margin-top: -50px
+  font-size: 24px
+  text-align: center
+  white-space: nowrap
+  padding-top: 7px
+  height: 46px
+.trapezia1
+  background-image: url('../img/trapezia1.png')
+  width: 283px
+  margin-left: -40px
+.trapezia2
+  background-image: url('../img/trapezia2.png')
+  width: 213px
+  margin-left: -10px
+.trapezia3
+  background-image: url('../img/trapezia3.png')
+  width: 254px
+  margin-left: -30px
+
+.big_circle
+  margin: auto
+  height: 220px
+  width: 220px
+  border-image: url('../img/border.png') 0 fill
+  display: flex
+  justify-content: center
+  .little_circle
+    height: 200px
+    width: 200px
+    border-radius: 200px
+    margin-top: 10px
+    background-size: cover
+  .photo1
+    background-image: url('../img/photo_act1.png')
+  .photo2
+    background-image: url('../img/photo_act2.png')
+  .photo3
+    background-image: url('../img/photo_act3.png')
+.act
+  margin-left: 22px
+  margin-top: 22px
+  display: flex
+  justify-content: center
+  flex-direction: column
+
+.description
+  margin-top: 20px
+  p
+    color: $text_color
+    font-size: 16px
+    text-align: center
+    @media screen and (max-width:350px)
+      font-size: 14px
+.center
+  margin: auto
+  margin-top: -1px
+  display: flex
+  flex-direction: column
+  align-items: center
+  p
+    margin-right: 46px
+
+.work
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  @media screen and (max-width:450px)
+    display: none
+.owl-item
+  width: calc(-10%)
+
+.three_types
+  display: flex
+  flex-direction: column
+  margin-top: -100px
+  @media screen and (max-width:1166px)
+    width: 100%
+    margin-top: 0
+.type_big
+  height: 200px
+  margin-left: 10px
+  margin-top: 10px
+  width: 480px
+  display: flex
+  background: white
+  border-radius: 20px
+  @media screen and (max-width:1166px)
+    width: 95%
+  .type_little
+    height: calc(100% - 20px)
+    width: calc(100% - 20px)
+    margin: auto
+    border-image: url('../img/border2.png') 0 fill
+    @media screen and (max-width:520px)
+      height: 100%
+      width: 100%
+    .middle
+      margin-top: 30px
+      font-size: 18px
+      color: black
+    p
+      text-align: center
+      color: $text_color
+.big_log
+  margin: auto
+  margin-top: 150px
+  height: 500px
+  width: 100%
+  background-image: url('../img/big_log.png')
+  background-position: center
+  background-repeat: no-repeat
+  display: flex
+  padding: 0 90px
+  @media screen and (max-width:950px)
+    padding: 0 32px
+  @media screen and (max-width:768px)
+    padding: 0 20px
+  @media screen and (max-width:420px)
+    padding: 0
+    background: rgba(0,0,0,0)
+    height: 280px
+    margin-top: 45px
+  .type_big
+    margin: auto
+    height: 400px
+    @media screen and (max-width:420px)
+      height: 280px
+    border-radius: 15px
+    width: 100%
+    @media screen and (max-width: 1030px)
+    .type_little
+      border-image: url('../img/border3.png') 0 fill
+      border-radius: 25px
+.expo
+  font-family: expo
+  font-size: 36px
+  margin-top: 40px
+  @media screen and (max-width:800px)
+    font-size: 24px
+  @media screen and (max-width:650px)
+    font-size: 18px
+.text_expo
+  color: $text_color
+  font-size: 20px
+  @media screen and (max-width:800px)
+    font-size: 14px
+.btn12
+  height: 38px
+  width: 200px
+  background: $main_brown
+  color: white
+  margin: auto
+  margin-top: 30px
+  border-radius: 25px
+  text-align: center
+  padding-top: 12px
+  box-shadow: 0px 6px 12px #CA86593D
+  p
+    color: white!important
+    font-size: 20px
+    margin: auto
+.last
+  display: flex
+  justify-content: center
+no
+  display: none
+  @media screen and (max-width:400px)
+    display: inline
+yes
+  @media screen and (max-width:400px)
+    display: none
+.owl-carousel-none-this
+  display: none!important
+  @media screen and (max-width:450px)
+    display: block!important
+footer
+  margin-top: 45px
+  background: #F6F1ED
+.owl-nav
+  display: none
+.mid
+  text-align: center
+
+.h3
+  font-size: 20px
+  color: $text_color
+  text-align: center!important
+  font-weight: lighter
+  @media screen and (max-width:425px)
+    font-size: 14px
+
+.callback
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: space-around
+  text-align: center
+  .type
+    margin-top: 40px
+    width: 230px
+  .first
+    font-size: 14px
+    color: $text_color
+    text-transform: uppercase
+  .second
+    margin: 0
+  .third
+    color: $text_color
+    font-weight: 400
+.pavlov_logo
+  display: none
+.social
+  display: flex
+  width: 230px
+  justify-content: space-around
+  .net
+    height: 50px
+    width: 50px
+    background: white
+    border-radius: 50px
+    display: flex
+    img
+      margin: auto
+.pavlov_logo
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin-top: 70px
+  @media screen and (max-width:792px)
+    margin-top: 0
+  .first
+    text-align: center
+    color: $text_color
+    font-size: 14px
+    text-transform: uppercase
+  .second
+    background-image: url('../img/pavlov_logo.png')
+    height: 55px
+    width: 220px
+    margin: 0
+    margin: auto
+    margin-top: 34px
+    background-repeat: no-repeat
+    background-size: 100%
+.hide
+  @media screen and (max-width:792px)
+    display: none
+.show
+  display: none
+  @media screen and (max-width:792px)
+    display: flex
+.lisovyk
+  height: 350px
+  width: 90%
+  background-image: url('../img/lisovyk.png')
+  @media screen and (max-width: 768px)
+    background: rgba(0,0,0,0)
+  margin: auto
+  background-size: 100%
+  display: flex
+  flex-direction: column
+  .logo_lisovyk
+    height: 50px
+    width: 50px
+    background-image: url('../img/derevo.png')
+    margin: auto
+    z-index: 100
+    img
+      height: 100%
+      width: 100%
+  p
+    font-size: 14px
+  .text
+    padding: 0
+    color: $text_color
+    margin: auto
+.flex
+  display: flex!important
+.pop_up
+  height: 990px
+  width: 770px
+  position: fixed
+  background: black
+  z-index: 10000
+  top: 5%
+  left: 25%
+hide
+  @media screen and (max-width: 768px)
+    display: none
+.side_text
+  width: 15px
+  color: #ca8659
+  font-size: 14px
+  font-weight: 900!important
+  transform: rotate(270deg)
+  position: absolute
+  margin-top: 100px
+  @media screen and (max-width:768px)
+    transform: rotate(0)
+    margin-top: -30px
+    width: 60px
+.contact_us
+  display: flex
+  margin-top: 150px
+  position: relative
+  flex-direction: row
+  padding-bottom: 100px
+  @media screen and (max-width: 768px)
+    display: block
+  .to_center
+    @media screen and (max-width: 768px)
+      position: relative!important
+      margin: auto!important
+  .name_desc
+    margin: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+  .contact_name
+    margin: auto
+    font-size: 46px
+    text-align: center
+    @media screen and (max-width: 450px)
+      font-size: 20px
+  .contact_description
+    margin: auto
+    font-size: 20px
+    text-align: center
+    color: #594237
+    @media screen and (max-width: 450px)
+      font-size: 14px
